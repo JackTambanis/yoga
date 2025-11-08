@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yoha Hand Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,9 +12,13 @@
   <video id="video" autoplay playsinline muted></video>
   <canvas id="game"></canvas>
 
-  <!-- Load TensorFlow + Yoha from CDN -->
+  <!-- Load TensorFlow.js -->
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.20.0/dist/tf.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@handtracking.io/yoha/dist/yoha.min.js"></script>
+  
+  <!-- Load Yoha directly from official GitHub (browser build) -->
+  <script src="https://handtracking-io.github.io/yoha/yoha.js"></script>
+
+  <!-- Your game logic -->
   <script src="script.js"></script>
 </body>
 </html>
